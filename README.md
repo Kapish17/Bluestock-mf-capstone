@@ -90,6 +90,19 @@ Bluestock_MF_Capstone/
 
 ---
 
+
+Day 3: Exploratory Data Analysis (EDA)
+Tasks Completed
+Performed NAV trend analysis.
+Analyzed AUM growth across fund houses.
+Studied SIP inflow trends.
+Created category inflow heatmaps.
+Analyzed folio count growth.
+Conducted investor demographic analysis.
+Performed geographic distribution analysis.
+Computed fund return correlations.
+Analyzed portfolio sector allocations.
+Documented business insights.
 ## Dataset Files
 
 1. Fund Master
