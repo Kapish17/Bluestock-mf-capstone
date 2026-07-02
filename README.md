@@ -2,7 +2,7 @@
 
 ## Data Analyst Internship Project
 
-This project is developed as part of the Data Analyst Internship at Bluestock Fintech. The objective is to analyze mutual fund data, perform data cleaning, build analytical databases, and generate business insights using Python, SQL, and data analysis techniques.
+This project was developed as part of the Data Analyst Internship at Bluestock Fintech. The objective is to analyze mutual fund data, perform data cleaning, build analytical databases, conduct exploratory data analysis, and generate financial performance insights using Python, SQL, and data analysis techniques.
 
 ---
 
@@ -39,6 +39,7 @@ Bluestock_MF_Capstone/
 * Jupyter Notebook
 * Matplotlib
 * Seaborn
+* SciPy
 * Plotly
 * Git & GitHub
 
@@ -49,21 +50,21 @@ Bluestock_MF_Capstone/
 ### Tasks Completed
 
 * Created project folder structure.
-* Initialized Git repository and GitHub repository.
+* Initialized Git and GitHub repositories.
 * Installed required Python dependencies.
 * Loaded and explored all datasets using Pandas.
 * Developed data ingestion scripts.
-* Fetched live NAV data using the MF API.
-* Performed basic data validation.
-* Created data quality reports.
+* Fetched live NAV data using MF API.
+* Performed initial data validation.
+* Generated data quality reports.
 
 ### Deliverables
 
 * data_ingestion.py
 * live_nav_fetch.py
 * requirements.txt
-* Jupyter notebook
-* Data quality report
+* Jupyter Notebook
+* Data Quality Report
 
 ---
 
@@ -78,7 +79,7 @@ Bluestock_MF_Capstone/
 * Designed SQLite database schema.
 * Loaded cleaned data into SQLite using SQLAlchemy.
 * Wrote analytical SQL queries.
-* Prepared a data dictionary.
+* Prepared data dictionary documentation.
 
 ### Deliverables
 
@@ -90,19 +91,59 @@ Bluestock_MF_Capstone/
 
 ---
 
+# Day 3: Exploratory Data Analysis (EDA)
 
-Day 3: Exploratory Data Analysis (EDA)
-Tasks Completed
-Performed NAV trend analysis.
-Analyzed AUM growth across fund houses.
-Studied SIP inflow trends.
-Created category inflow heatmaps.
-Analyzed folio count growth.
-Conducted investor demographic analysis.
-Performed geographic distribution analysis.
-Computed fund return correlations.
-Analyzed portfolio sector allocations.
-Documented business insights.
+### Tasks Completed
+
+* Performed NAV trend analysis.
+* Analyzed AUM growth across fund houses.
+* Studied SIP inflow trends.
+* Created category inflow heatmaps.
+* Analyzed folio count growth.
+* Conducted investor demographic analysis.
+* Performed geographic distribution analysis.
+* Computed fund return correlations.
+* Analyzed portfolio sector allocations.
+* Documented key business insights.
+
+### Deliverables
+
+* EDA Notebook
+* Trend Visualizations
+* Correlation Analysis
+* Business Insights Report
+
+---
+
+# Day 4: Performance Analytics and Fund Evaluation
+
+### Tasks Completed
+
+* Calculated daily returns for all mutual fund schemes.
+* Computed CAGR using historical NAV data.
+* Calculated Sharpe Ratio using risk-adjusted returns.
+* Computed Sortino Ratio using downside risk.
+* Performed Alpha and Beta analysis against the NIFTY100 benchmark.
+* Calculated Maximum Drawdown for each scheme.
+* Measured Tracking Error against benchmark indices.
+* Developed a composite Fund Scorecard (0–100).
+* Ranked mutual funds based on performance metrics.
+* Compared top-performing funds with NIFTY50 and NIFTY100 benchmarks.
+* Generated benchmark comparison visualizations.
+
+### Deliverables
+
+* Performance_Analytics.ipynb
+* alpha_beta.csv
+* fund_scorecard.csv
+* cagr.csv
+* sharpe_ratio.csv
+* sortino_ratio.csv
+* max_drawdown.csv
+* benchmark_comparison.png
+
+---
+
 ## Dataset Files
 
 1. Fund Master
@@ -125,16 +166,33 @@ Documented business insights.
 * SQL
 * Database Design
 * Financial Data Analysis
+* Performance Analytics
+* Risk Analysis
+* Benchmark Analysis
 * API Integration
 * Data Validation
 * Python Programming
+* Data Visualization
+* Statistical Analysis
+
+---
+
+## Key Financial Metrics Implemented
+
+* Daily Returns
+* CAGR
+* Sharpe Ratio
+* Sortino Ratio
+* Alpha
+* Beta
+* Maximum Drawdown
+* Tracking Error
+* Fund Scorecard
 
 ---
 
 ## Author
 
-Kapish
-
+**Kapish**
 Data Analyst Intern
-
 Bluestock Fintech Internship
