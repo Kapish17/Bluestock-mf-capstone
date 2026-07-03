@@ -2,7 +2,7 @@
 
 ## Data Analyst Internship Project
 
-This project was developed as part of the Data Analyst Internship at Bluestock Fintech. The objective is to analyze mutual fund data, perform data cleaning, build analytical databases, conduct exploratory data analysis, and generate financial performance insights using Python, SQL, and data analysis techniques.
+This project was developed as part of the **Data Analyst Internship at Bluestock Fintech**. The objective is to analyze mutual fund data, perform data cleaning, build an analytical database, conduct exploratory data analysis (EDA), evaluate fund performance, compute financial risk metrics, and generate actionable investment insights using **Python, SQL, SQLite, and data visualization**.
 
 ---
 
@@ -11,140 +11,205 @@ This project was developed as part of the Data Analyst Internship at Bluestock F
 ```text
 Bluestock_MF_Capstone/
 │
+├── charts/
+├── dashboard/
 ├── data/
 │   ├── raw/
 │   └── processed/
 │
-├── scripts/
 ├── notebooks/
-├── sql/
+│   ├── 01_data_ingestion.ipynb
+│   ├── EDA_Analysis.ipynb
+│   ├── Performance_Analytics.ipynb
+│   └── Advanced_Analytics.ipynb
+│
 ├── reports/
-├── dashboard/
+├── scripts/
+├── sql/
 │
 ├── bluestock_mf.db
-├── requirements.txt
 ├── README.md
+├── requirements.txt
 └── .gitignore
 ```
 
 ---
 
-## Technologies Used
+# Technologies Used
 
-* Python
-* Pandas
-* NumPy
-* SQLAlchemy
-* SQLite
-* Jupyter Notebook
-* Matplotlib
-* Seaborn
-* SciPy
-* Plotly
-* Git & GitHub
+- Python
+- Pandas
+- NumPy
+- SQLite
+- SQLAlchemy
+- SQL
+- Jupyter Notebook
+- Matplotlib
+- Seaborn
+- Plotly
+- SciPy
+- Git & GitHub
 
 ---
 
 # Day 1: Data Ingestion
 
-### Tasks Completed
+## Tasks Completed
 
-* Created project folder structure.
-* Initialized Git and GitHub repositories.
-* Installed required Python dependencies.
-* Loaded and explored all datasets using Pandas.
-* Developed data ingestion scripts.
-* Fetched live NAV data using MF API.
-* Performed initial data validation.
-* Generated data quality reports.
+- Created the project folder structure.
+- Initialized Git and GitHub repositories.
+- Installed required Python libraries.
+- Loaded and explored all datasets using Pandas.
+- Developed data ingestion scripts.
+- Retrieved live NAV data using the Mutual Fund API.
+- Performed initial data validation.
+- Generated data quality reports.
 
-### Deliverables
+## Deliverables
 
-* data_ingestion.py
-* live_nav_fetch.py
-* requirements.txt
-* Jupyter Notebook
-* Data Quality Report
+- Data Ingestion Notebook
+- Data Quality Report
+- Live NAV Fetch Script
+- Requirements File
 
 ---
 
-# Day 2: Data Cleaning and SQLite Database Design
+# Day 2: Data Cleaning & Database Design
 
-### Tasks Completed
+## Tasks Completed
 
-* Cleaned NAV history data.
-* Standardized investor transactions.
-* Validated scheme performance data.
-* Created processed datasets.
-* Designed SQLite database schema.
-* Loaded cleaned data into SQLite using SQLAlchemy.
-* Wrote analytical SQL queries.
-* Prepared data dictionary documentation.
+- Cleaned and standardized mutual fund datasets.
+- Validated NAV history and transaction records.
+- Created processed datasets.
+- Designed a relational SQLite database schema.
+- Loaded cleaned datasets into SQLite using SQLAlchemy.
+- Wrote analytical SQL queries.
+- Prepared a comprehensive data dictionary.
 
-### Deliverables
+## Deliverables
 
-* 10 cleaned CSV files
-* bluestock_mf.db
-* schema.sql
-* queries.sql
-* data_dictionary.md
+- Cleaned CSV Files
+- SQLite Database (`bluestock_mf.db`)
+- SQL Schema
+- SQL Queries
+- Data Dictionary
 
 ---
 
 # Day 3: Exploratory Data Analysis (EDA)
 
-### Tasks Completed
+## Tasks Completed
 
-* Performed NAV trend analysis.
-* Analyzed AUM growth across fund houses.
-* Studied SIP inflow trends.
-* Created category inflow heatmaps.
-* Analyzed folio count growth.
-* Conducted investor demographic analysis.
-* Performed geographic distribution analysis.
-* Computed fund return correlations.
-* Analyzed portfolio sector allocations.
-* Documented key business insights.
+- Analyzed NAV trends across schemes.
+- Studied Assets Under Management (AUM) growth.
+- Evaluated monthly SIP inflows.
+- Analyzed category-wise inflows.
+- Examined investor demographics.
+- Performed geographic investment analysis.
+- Conducted fund correlation analysis.
+- Analyzed portfolio allocations.
+- Generated business insights using visualizations.
 
-### Deliverables
+## Deliverables
 
-* EDA Notebook
-* Trend Visualizations
-* Correlation Analysis
-* Business Insights Report
-
----
-
-# Day 4: Performance Analytics and Fund Evaluation
-
-### Tasks Completed
-
-* Calculated daily returns for all mutual fund schemes.
-* Computed CAGR using historical NAV data.
-* Calculated Sharpe Ratio using risk-adjusted returns.
-* Computed Sortino Ratio using downside risk.
-* Performed Alpha and Beta analysis against the NIFTY100 benchmark.
-* Calculated Maximum Drawdown for each scheme.
-* Measured Tracking Error against benchmark indices.
-* Developed a composite Fund Scorecard (0–100).
-* Ranked mutual funds based on performance metrics.
-* Compared top-performing funds with NIFTY50 and NIFTY100 benchmarks.
-* Generated benchmark comparison visualizations.
-
-### Deliverables
-
-* Performance_Analytics.ipynb
-* alpha_beta.csv
-* fund_scorecard.csv
-* cagr.csv
-* sharpe_ratio.csv
-* sortino_ratio.csv
-* max_drawdown.csv
-* benchmark_comparison.png
+- EDA Notebook
+- Trend Charts
+- Correlation Analysis
+- Business Insights
 
 ---
 
-## Dataset Files
+# Day 4: Performance Analytics & Fund Evaluation
+
+## Tasks Completed
+
+- Calculated Daily Returns.
+- Computed CAGR for all schemes.
+- Calculated Sharpe Ratio.
+- Calculated Sortino Ratio.
+- Performed Alpha & Beta analysis.
+- Calculated Maximum Drawdown.
+- Measured Tracking Error.
+- Developed a composite Fund Scorecard (0–100).
+- Ranked mutual funds using multiple performance metrics.
+- Compared fund performance against NIFTY benchmarks.
+- Generated benchmark comparison visualizations.
+
+## Deliverables
+
+- Performance_Analytics.ipynb
+- CAGR Report
+- Sharpe Ratio Report
+- Sortino Ratio Report
+- Alpha-Beta Report
+- Maximum Drawdown Report
+- Fund Scorecard
+- Benchmark Comparison Chart
+
+---
+
+# Day 5: Advanced Analytics & Risk Metrics
+
+## Tasks Completed
+
+### Risk Analytics
+
+- Calculated Historical Value at Risk (VaR 95%) for all mutual fund schemes.
+- Computed Conditional Value at Risk (CVaR) to measure expected downside loss.
+- Generated comprehensive risk reports for all funds.
+
+### Rolling Performance Analysis
+
+- Calculated Rolling 90-Day Sharpe Ratio.
+- Visualized risk-adjusted performance trends for selected mutual funds.
+
+### Investor Analytics
+
+- Performed Investor Cohort Analysis based on first investment year.
+- Computed average SIP amount and total investment for each cohort.
+- Identified the most preferred mutual fund for every investor cohort.
+
+### SIP Continuity Analysis
+
+- Calculated average gap between SIP transactions.
+- Identified investors with irregular SIP investments.
+- Classified investors as **Healthy** or **At-Risk** based on SIP continuity.
+
+### Fund Recommendation System
+
+- Developed a rule-based mutual fund recommender.
+- Recommended Top 3 funds based on:
+  - Risk Appetite
+  - Risk Grade
+  - Sharpe Ratio
+
+### Portfolio Concentration Analysis
+
+- Calculated Herfindahl-Hirschman Index (HHI) using sector allocation weights.
+- Compared diversification levels across equity mutual funds.
+
+### Business Insights
+
+- Generated advanced financial insights covering:
+  - Downside Risk
+  - Risk-Adjusted Returns
+  - Investor Behaviour
+  - SIP Continuity
+  - Portfolio Diversification
+
+## Deliverables
+
+- Advanced_Analytics.ipynb
+- var_cvar_report.csv
+- rolling_sharpe_chart.png
+- cohort_analysis.csv
+- sip_continuity_report.csv
+- hhi_report.csv
+- recommender.py
+
+---
+
+# Dataset Files
 
 1. Fund Master
 2. NAV History
@@ -159,40 +224,79 @@ Bluestock_MF_Capstone/
 
 ---
 
-## Skills Applied
+# Key Financial Metrics Implemented
 
-* Data Analysis
-* Data Cleaning
-* SQL
-* Database Design
-* Financial Data Analysis
-* Performance Analytics
-* Risk Analysis
-* Benchmark Analysis
-* API Integration
-* Data Validation
-* Python Programming
-* Data Visualization
-* Statistical Analysis
+## Return Metrics
+
+- Daily Returns
+- CAGR
+- Rolling Returns
+
+## Risk Metrics
+
+- Historical VaR (95%)
+- Conditional VaR (CVaR)
+- Standard Deviation
+- Maximum Drawdown
+- Tracking Error
+
+## Risk-Adjusted Performance
+
+- Sharpe Ratio
+- Sortino Ratio
+- Alpha
+- Beta
+
+## Portfolio Analytics
+
+- Fund Scorecard
+- Sector HHI Concentration
+- Rolling Sharpe Ratio
+
+## Investor Analytics
+
+- Investor Cohort Analysis
+- SIP Continuity Analysis
+- Fund Recommendation System
 
 ---
 
-## Key Financial Metrics Implemented
+# Skills Demonstrated
 
-* Daily Returns
-* CAGR
-* Sharpe Ratio
-* Sortino Ratio
-* Alpha
-* Beta
-* Maximum Drawdown
-* Tracking Error
-* Fund Scorecard
+- Data Analysis
+- Financial Data Analytics
+- Mutual Fund Analytics
+- Risk Analytics
+- Performance Evaluation
+- Portfolio Analytics
+- Statistical Analysis
+- Time Series Analysis
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- SQL & Database Design
+- SQLite
+- Python Programming
+- Data Visualization
+- Business Intelligence
+- Investment Analytics
+- Git & GitHub
 
 ---
 
-## Author
+# Project Highlights
+
+- Built an end-to-end mutual fund analytics pipeline using Python and SQLite.
+- Processed and analyzed multiple financial datasets containing historical NAV, transactions, performance, and portfolio holdings.
+- Implemented industry-standard financial metrics for return, risk, and portfolio evaluation.
+- Developed investor behavior analytics and a rule-based mutual fund recommendation engine.
+- Generated actionable business insights through advanced analytics and visualizations.
+
+---
+
+# Author
 
 **Kapish**
-Data Analyst Intern
-Bluestock Fintech Internship
+
+**Data Analyst Intern**
+
+**Bluestock Fintech Internship**
